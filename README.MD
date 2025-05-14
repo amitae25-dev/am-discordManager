@@ -1,10 +1,10 @@
 ## Discord Manager By Amitae
 
-###Description:
+### Description:
 **discordManager** is a lightweight server-side Lua module that allows FiveM scripts to interact with the Discord API directly. It supports actions like role management, user queries, direct messaging, and guild data retrieval — all without needing a separate Node.js bot process.
 
-###Functions:
-#####GetUserInfo
+### Functions:
+##### GetUserInfo
 - Returns informations about a specific user
 - Info passed:
 -- Discord Id
@@ -19,7 +19,7 @@
 -- "username" - Returns the discord username of the user
 -- "global_name" - Returns the global username of the user
 
-####AddRole
+#### AddRole
 - Add a specific role to a user
 - Info passed:
 -- Discord Id
@@ -27,7 +27,7 @@
 - Returned value:
 -- Boolean if succeed
 
-####RemoveRole
+#### RemoveRole
 - Remove a specific role from a user
 - Info passed:
 -- Discord Id
@@ -35,7 +35,7 @@
 - Returned value:
 -- Boolean if succeed
 
-####HasRole
+#### HasRole
 - Return the value if the player has a specific role
 - Info passed:
 -- Discord Id
@@ -43,14 +43,14 @@
 - Returned value:
 -- Boolean if succeed
 
-####IsUserInGuild
+#### IsUserInGuild
 - Return the value if the player is in the guild
 - Info passed:
 -- Discord Id
 - Returned value:
 -- Boolean if true or false
 
-####SendDm
+#### SendDm
 - Return the value if the it was successful or not
 - Info passed:
 -- Discord Id
@@ -58,7 +58,7 @@
 - Returned value:
 -- Boolean if succeed
 
-####GetGuildInfo
+#### GetGuildInfo
 - Return information about your guild
 - Info passed:
 -- None
@@ -93,15 +93,15 @@ exports["am-discordManager"]:GetGuildInfo()
 	{"name": "string", "member_count": "intiger OR unknown", "roles": "intiger"}
 ```
 
-###Setup:
-####Create a Bot on Discord:
+### Setup:
+#### Create a Bot on Discord:
 - Go to Discord [Developer Portal](https://discord.com/developers/applications "Developer Portal")
 - Create a new application → Go to "Bot" → Click "Add Bot"
 - Enable Server Members Intent
 - **Copy the bot token **— you will need this
 - **Invite the bot to your server**
 
-####Run the discord bot:
+#### Run the discord bot:
 - Go to `am-discordManager\discord-bot`
 - Open up the `.env` file
 - **Paste your discord bot token**
@@ -113,7 +113,7 @@ exports["am-discordManager"]:GetGuildInfo()
 - After you ran the commands wait a little bit
 - **Now your discord bot is running**
 
-####Configure the script:
+#### Configure the script:
 - Open the `config.lua` file
 - Paste your guildID and botToken 
 - How to get your guild ID? 
@@ -121,7 +121,7 @@ exports["am-discordManager"]:GetGuildInfo()
 -- Right mouse button on your guild (discord server) and press `Copy ID`
 -- **Now you have the guild ID**
 
-###Warning:
+### Warning:
 - **You must pass the formated discord ID to the script**
 
 ```lua
@@ -132,9 +132,9 @@ id = id and id:gsub("discord:", "")
 
 - **Discord bot must run all the time during use**
 
-###Version:
+### Version:
 - 1.0.0
 
-###Author:
+### Author:
 - Discord: Amitae_
 - Discord Server (support): [asd.asd Scripts](https://discord.gg/cgQMXEBDuR "asd.asd Scripts")
