@@ -4,7 +4,7 @@ game 'gta5'
 name "am-discordManager"
 description "A Discord integration script for managing roles, fetching user info, and more."
 author "Amitae"
-version "1.0"
+version "1.1"
 
 server_scripts {
 	'config.lua',
